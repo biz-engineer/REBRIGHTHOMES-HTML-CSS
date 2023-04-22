@@ -1,0 +1,55 @@
+/* フッター */
+@use "mixin" as *;
+/*変数読み込み*/
+
+.main-footer {
+  background-color: $main-color;
+}
+
+.main-footer__boder {
+  top: -5px;
+  height: 10px;
+}
+
+.main-footer__container {}
+
+.main-footer__logo-area {
+  padding-top: 43.9px;
+}
+
+.main-footer__logo-img {
+  width: 112.02px;
+}
+
+.main-footer__sns-area {
+  margin-top: 32px;
+}
+
+.main-footer__sns-link {}
+
+.main-footer__sns-link:not(:first-child) {
+  margin-left: 8px;
+
+}
+
+.main-footer__sns-icon {
+  font-size: 30px;
+  color: $sub-text-color;
+}
+
+.main-footer__privacy-area {
+  margin-top: 29px;
+}
+
+.main-footer__privacy-link {}
+
+.main-footer__privacy-text {
+  color: $sub-text-color;
+
+}
+
+.main-footer__copyright-text {
+  color: $sub-text-color;
+  margin-top: 6.8px;
+  padding-bottom: 7px;
+}

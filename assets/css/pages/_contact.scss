@@ -1,0 +1,113 @@
+/* お問い合わせ */
+@use "../import/mixin" as *;
+/*変数読み込み*/
+
+.contact__article-content {
+  width: min(100%, 1239.91px); 
+}
+
+.contact__form-item {
+
+}
+
+.contact__form-item:not(:first-child) {
+  margin-top: 68px;
+}
+
+.contact__form-label-box{
+  width: min(100%, 342px);
+  background-color: rgba($color:$main-color, $alpha: 0.2);
+  line-height: 65.5px;
+}
+
+.contact__form-input-box{
+  border: 1px solid rgba($color:$main-color, $alpha: 0.5);
+  line-height: 65.5px;
+}
+
+.contact__form-input--body {
+  min-height: 556.5px;
+}
+
+.contact__button-box {
+  margin-top: 117.3px;
+}
+
+.contact__arrow-right-icon {
+  font-size: 22.42px;
+  color: $sub-text-color;
+}
+
+
+
+
+.contact__section {
+  width: 100%;
+}
+
+.contact__main-area {
+  padding-top: 157px;
+}
+
+.contact__button-illust-box{
+  
+}
+.contact__mail-link {}
+
+.contact__mail-button {
+  min-height: 82px;
+  min-width: 213px;
+  background-color: $main-color;
+  padding: 3px;
+  border-radius: 12px;
+}
+
+.contact__mail-img {
+  width: 54.48px;
+}
+
+.contact__mail-text-box {
+  padding-right: 13.6px;
+}
+
+.contact__mail-text1 {
+  color: $sub-text-color;
+  font-size: 26px;
+  margin-left: 29.6px;
+}
+
+.contact__telephone-link {}
+
+.contact__telephone-button {
+  min-height: 105px;
+  min-width: 815px;
+  background-color: $main-color;
+  padding: 3px;
+  border-radius: 12px;
+
+}
+
+.contact__button-inner {
+  padding-top: 31px;
+  padding-bottom: 31px;
+  border-radius: 12px;
+  border: 1px solid $sub-text-color;
+}
+
+.contact__telephone-img {
+  width: 30.35px;
+}
+
+.contact__telephone-text-box {
+  margin-left: 16px;
+}
+
+.contact__telephone-text1 {
+  font-size: 28px;
+  color: $sub-text-color;
+}
+
+.contact__telephone-text2 {
+  font-size: 11px;
+  color: $sub-text-color;
+}

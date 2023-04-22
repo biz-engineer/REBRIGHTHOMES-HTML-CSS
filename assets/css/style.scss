@@ -1,0 +1,21 @@
+/* 共通部分読み込み */
+@use "import/destyle"; /*リセットスタイル*/
+@use "import/mixin" as *;   /*変数定義*/
+@use "import/common";  /*セクション、ページを横断して適応するスタイル*/
+@use "import/header";  /*headerスタイル*/
+@use "import/footer";  /*footerスタイル*/
+
+/* 個別ページ読み込み */
+@use "pages/home";  /*TOPページスタイル*/
+@use "pages/about"; 
+@use "pages/owner"; 
+@use "pages/property"; 
+@use "pages/company"; 
+@use "pages/blog"; 
+@use "pages/contact"; 
+@use "pages/news"; 
+
+/* レスポンシブスタイル読み込み */
+@use "responsive/common_responsive";  /*TOPページレスポンシブスタイル*/
+@use "responsive/header_responsive";  /*TOPページレスポンシブスタイル*/
+@use "responsive/home_responsive";  /*TOPページレスポンシブスタイル*/

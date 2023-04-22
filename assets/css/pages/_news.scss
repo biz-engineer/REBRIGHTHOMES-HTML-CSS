@@ -1,0 +1,115 @@
+/* お知らせ一覧 */
+@use "../import/mixin" as *;
+/*変数読み込み*/
+
+
+.news-area {
+  padding-top: 90.2px;
+  display: flex;
+  justify-content: center;
+}
+
+.news__main-area {
+  color: $sub2-text-color;
+}
+
+.news-box {
+  align-items: center;
+  width: 1226px;
+  border-radius: 12px;
+  background-color: $main-color;
+}
+
+.news-heading-content {
+  padding-left: 110px;
+  padding-right: 110px;
+}
+
+.news-heading-text {
+  font-size: $large-font-size;
+  color: $sub2-text-color;
+
+}
+
+.news-heading-subtext {
+  color: $sub2-text-color;
+
+}
+
+.news-list-content {
+  padding-top: 108.5px;
+  max-width: 100%;
+}
+
+.news-list-icon {
+  margin-right: 13.8px;
+  color: $sub2-text-color;
+  font-size: 15.43px;
+}
+
+.news-list-date {
+  margin-right: 41px;
+  color: $sub2-text-color;
+
+}
+
+.news-list-title {
+  color: $sub2-text-color;
+
+}
+
+.news-button-content {
+  display: flex;
+  justify-content: end;
+  align-items: end;
+  padding-right: 20px;
+  padding-bottom: 23px;
+}
+
+.news-button {
+  display: flex;
+  align-items: center;
+  padding: 15px 22px;
+  border-radius: 12px;
+  background-color: $sub-text-color;
+}
+
+.news-button-icon {
+  margin-right: 24px;
+  font-size: 29px;
+  color: $sub-color;
+  background-color: $main-color;
+  border-radius: 1000px;
+}
+
+.news-button-text {
+  font-size: 20px;
+}
+
+.news-heading-subtext {}
+
+.news-list-content {}
+
+.news-list-item {
+  display: flex;
+  align-items: center;
+  padding-bottom: 22.6px;
+}
+
+.news-list-content:not(:first-child) {
+  margin-top: 22.6px;
+}
+
+.news-list-link {
+  padding-top: 22.6px;
+}
+.news-list-link:not(:first-child){
+  margin-top: 22.6px;
+}
+
+.news-list-icon {}
+
+.news-list-date {}
+
+.news-list-title {}
+

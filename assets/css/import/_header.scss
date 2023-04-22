@@ -1,0 +1,123 @@
+/* ヘッダー */
+@use "mixin" as *;
+/*変数読み込み*/
+
+
+.top-header {
+  position: fixed;
+  width: 100vw;
+  border-top: 15px solid $main-color;
+}
+
+.top-header__button-area {
+  // max-width: 1720px;
+  display: flex;
+  justify-content: flex-end;
+  padding-right: 100px;
+}
+
+.top-header__button-link {}
+
+.top-header__button {
+  top: -4px;
+  position: relative;
+  background-color: $main-color;
+  padding: 3px;
+  border-radius: 0 0 15px 15px;
+
+  // position: absolute;
+  // outline: solid 5px #000;    /* 外側の線になる5pxの一本線の枠線をひく*/
+  // outline-offset: 1px;        /* 内側の線になる一本線の枠線をひく*/
+}
+
+// .top-header__button::before {
+// 	content: '';            	/* 擬似要素に実体を持たせる */
+// 	width: calc(100% + 4px);    /* 外側の線になる要素の幅を指定する*/
+// 	height: calc(100% + 4px);   /* 外側の線になる要素の高さを指定する */
+// 	border: 1px solid #000;    	/* 外側の線になる一本線の枠線をひく*/
+// 	position: absolute;        	/* 外側の線の位置を自由に動かせるようにする */
+// 	top: -3px;            		/* 外側の線の位置を、内側の線から上に3pxずらす */
+// 	left: -3px;            		/* 外側の線の位置を、内側の線から左に3pxずらす*/
+//   background-color: $main-color;
+// }
+
+.top-header__button-text {
+  padding-left: 33px;
+  padding-right: 68px;
+  padding-bottom: 12px;
+  color: $sub-text-color;
+  border: 1px solid $sub-text-color;
+  border-top: 1px solid $main-color;
+  font-size: 19.41px;
+  border-radius: 0 0 15px 15px;
+}
+
+.top-header__button-text--sub {
+  font-size: $small-font-size;
+}
+
+.main-window {
+  padding-top: 15px;
+}
+
+.side-header {
+  position: fixed;
+  z-index: 100;
+  width: calc( $sideheader-width / 1920px ) * 100%;
+}
+
+.side-header__logo-area {
+  padding-top: 59px;
+}
+
+.side-header__logo-img {
+  width: 163.26px;
+}
+
+.side-header__navigation-area {
+  padding-top: 75.9px;
+}
+
+.side-header__list-box {}
+
+.side-header__list-item {}
+
+.side-header__list-item:not(:first-child) {
+  padding-top: 49px;
+}
+
+.side-header__list-link {}
+
+.side-header__list-top-text {}
+
+.side-header__list-sub-text {
+  font-size: $small-font-size;
+}
+
+.side-header__box-icon::before {
+  content: "";
+  display: inline-block;
+  width: 18px;
+  height: 18px;
+  background-color: $sub-color;
+  position: absolute;
+  transform: translate(-25px, 4px);
+}
+
+.side-header__sns-area {
+  padding-top: 54.1px;
+}
+
+.side-header__sns-link {}
+
+.side-header__sns-icon {
+  margin-left: 4px;
+  margin-right: 4px;
+  height: 30px;
+}
+
+/* ハンバーガーメニュー */
+
+.humberger {
+  display: none;
+}

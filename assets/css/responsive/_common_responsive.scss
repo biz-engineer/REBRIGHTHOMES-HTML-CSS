@@ -1,0 +1,19 @@
+/* TOPページ */
+@use "../import/mixin" as *;
+/*変数読み込み*/
+
+/* 共通スタイルスポンシブ */
+
+/* スマホ用スタイル */
+@media ( width <= $smartphone-breakpoint )  {
+  .c_top-migration-img {
+    display: none;
+  }
+
+}
+
+/* タブレット用スタイル */
+@media ( width <= $tablet-breakpoint )  {
+
+
+}

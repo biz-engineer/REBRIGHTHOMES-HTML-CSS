@@ -1,0 +1,412 @@
+/* TOPページ */
+@use "../import/mixin" as *;
+/*変数読み込み*/
+
+/* TOPページ内共通スタイル */
+.c_home__heading-area {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid $main-color;
+}
+
+.c_home__heading-text {
+  font-size: $ex-large-font-size;
+  color: $main-color;
+}
+
+.c_home__heading-subtext {
+  padding-right: 91px;
+  font-size: $ex-ex-large-font-size;
+  color: $main-color;
+}
+
+.c_button-area {
+  padding-top: 41.1px;
+}
+
+.c_detail-button {
+  padding: 14px 25px;
+  border-radius: 12px;
+  background-color: $main-color;
+}
+
+.c_detail-button-arrow {
+  font-size: 29px;
+  color: $sub-color;
+}
+
+.c_detail-button-text {
+  font-size: 20px;
+  padding-left: 15px;
+  color: $sub-text-color;
+}
+
+
+/* TOPセクション */
+.home__topview__section {
+  width: 100%;
+}
+
+.home__topview__top-img-area {}
+
+.home__topview__top-img {
+  width: 100%;
+}
+
+.home__topview__scroll-area {}
+
+.home__topview__scroll-link {}
+
+.home__topview__scroll-down-icon {
+  font-size: 66px;
+  color: $main-color;
+}
+
+.home__topview__scroll-down-text {
+  padding-top: 6px;
+  font-size: 16px;
+}
+
+.home__topview__news-area {
+  padding-top: 90.2px;
+  display: flex;
+  justify-content: center;
+}
+
+.home__topview__news-box {
+  align-items: center;
+  width: 1226px;
+  border-radius: 12px;
+  background-color: $main-color;
+}
+
+.home__topview__news-heading-content {
+  padding-left: 110px;
+  padding-right: 110px;
+}
+
+.home__topview__news-heading-text {
+  font-size: $large-font-size;
+  color: $sub-text-color;
+
+}
+
+.home__topview__news-heading-subtext {
+  color: $sub-text-color;
+
+}
+
+.home__topview__news-list-content {
+  padding-top: 58px;
+  padding-bottom: 58px;
+  max-width: 620px;
+}
+
+.home__topview__news-list-icon {
+  margin-right: 13.8px;
+  color: $sub-color;
+  font-size: 15.43px;
+}
+
+.home__topview__news-list-date {
+  margin-right: 41px;
+  color: $sub-text-color;
+
+}
+
+.home__topview__news-list-title {
+  color: $sub-text-color;
+
+}
+
+.home__topview__news-button-content {
+  display: flex;
+  justify-content: end;
+  align-items: end;
+  padding-right: 20px;
+  padding-bottom: 23px;
+}
+
+.home__topview__news-button {
+  display: flex;
+  align-items: center;
+  padding: 15px 22px;
+  border-radius: 12px;
+  background-color: $sub-text-color;
+}
+
+.home__topview__news-button-icon {
+  margin-right: 24px;
+  font-size: 29px;
+  color: $sub-color;
+  background-color: $main-color;
+  border-radius: 1000px;
+}
+
+.home__topview__news-button-text {
+  font-size: 20px;
+}
+
+.home__topview__news-heading-subtext {}
+
+.home__topview__news-list-content {}
+
+.home__topview__news-list-item {
+  display: flex;
+  align-items: center;
+}
+
+.home__topview__news-list-item:not(:first-child) {
+  margin-top: 25.6px;
+}
+
+.home__topview__news-list-icon {}
+
+.home__topview__news-list-date {}
+
+.home__topview__news-list-title {}
+
+.home__topview__news-button-content {}
+
+.home__topview__news-button-icon {}
+
+
+/* リブライトホームズとは */
+.home__about__section {
+  width: 100%;
+  padding-top: 187.1px;
+}
+
+.home__about__main-area {}
+
+.home__about__main-box {
+  width: 702px;
+}
+
+.home__about__text {
+  padding-top: 31.3px;
+}
+
+.home__about__img-box {}
+
+.home__about__img1 {
+  padding-top: 39.2px;
+  width: 526.49px;
+}
+
+.home__about__img2 {
+  width: 684.1px;
+  bottom: 86.8px;
+}
+
+/* 物件オーナーの方へ */
+.home__owner__section {
+  width: 100%;
+  padding-top: 38.2px;
+}
+
+.home__owner__main-area {
+  padding-top: 72.6px;
+}
+
+.home__owner__img {
+  margin-left: 54px;
+}
+
+.home__owner__text-box {
+  width: 781px;
+  padding-top: 19.2px;
+}
+
+.home__owner__main-heading-text {
+  padding-left: 37px;
+  font-size: $sub-large-font-size;
+}
+
+.home__owner__main-heading-subtext {
+  padding-top: 15px;
+}
+
+/* 物件情報 */
+.home__property__section {
+  width: 100%;
+  padding-top: 62px;
+}
+
+.home__property__main-area {}
+
+.home__property__text-area {
+  padding-top: 47.5px;
+  width: 1160px;
+}
+
+.home__property__text {
+  width: 702px;
+}
+
+.home__property__image-content {
+  padding-top: 108px;
+}
+
+.home__property__property-img1 {
+  width: 292px;
+}
+
+.home__property__property-img1:not(:first-child) {
+  margin-left: 106px;
+}
+
+.home__property__img2 {
+  margin-top: 190.5px;
+  width: 526.49px;
+}
+
+
+/* 会社概要 */
+.home__company__section {
+  width: 100%;
+  padding-top: 62px;
+}
+
+.home__company__main-area {
+  padding-top: 65px;
+  padding-left: 27.5px;
+}
+
+.home__company__img {}
+
+.home__company__table-area {}
+
+.home__company__table {
+  border: 1px solid $main-color;
+  width: 100%;
+  max-width: 730px;
+}
+
+.home__company__table-row {
+  border: 1px solid $main-color;
+  height: 66px;
+}
+
+.home__company__table-heading {
+  min-width: 126px;
+  padding: 42px 18px;
+  text-align: center;
+  vertical-align: middle;
+  font-size: 16px;
+  font-weight: 200;
+  background-color: $main-color;
+  color: $sub-text-color;
+}
+
+.home__company__table-row:not(:first-child) .home__company__table-heading {
+  border-top: 1px solid $sub-text-color;
+}
+
+.home__company__table-cell {
+  // min-width: 604px;
+  width: 500px;
+  padding-left: 20px;
+  padding-right: 20px;
+  vertical-align: middle;
+}
+
+
+/* ブログ */
+.home__blog__section {
+  width: 100%;
+  padding-top: 91.2px;
+}
+
+.home__blog__main-area {
+  min-width: 1208px;
+  padding-top: 68px;
+  column-gap: 81px;
+}
+
+.home__blog__article-content {}
+
+.home__blog__article-img {
+  border-radius: 12px;
+}
+
+.home__blog__article-date {
+  margin-top: 17px;
+  padding-left: 14px;
+}
+
+.home__blog__article-text {
+  margin-top: 4px;
+}
+
+
+/* お問い合わせ　*/
+.home__inquiry__section {
+  width: 100%;
+  padding-top: 102.2px;
+  margin-bottom: 114.6px;
+}
+
+.home__inquiry__main-area {
+  margin-top: 92.3px;
+}
+
+.home__inquiry__mail-link {}
+
+.home__inquiry__mail-button {
+  min-height: 105px;
+  min-width: 495px;
+  background-color: $main-color;
+  padding: 3px;
+  border-radius: 12px;
+}
+
+.home__inquiry__mail-img {
+  width: 54.48px;
+}
+
+.home__inquiry__mail-text-box {}
+
+.home__inquiry__mail-text1 {
+  color: $sub-text-color;
+  font-size: 26px;
+  margin-left: 29.6px;
+}
+
+.home__inquiry__telephone-link {}
+
+.home__inquiry__telephone-button {
+  min-height: 105px;
+  min-width: 495px;
+  background-color: $main-color;
+  margin-left: 223px;
+  padding: 3px;
+  border-radius: 12px;
+
+}
+
+.home__inquiry__button-inner {
+  padding-top: 31px;
+  padding-bottom: 31px;
+  padding-left: 115.7px;
+  border-radius: 12px;
+  border: 1px solid $sub-text-color;
+}
+
+.home__inquiry__telephone-img {
+  width: 30.35px;
+}
+
+.home__inquiry__telephone-text-box {
+  margin-left: 16px;
+}
+
+.home__inquiry__telephone-text1 {
+  font-size: 28px;
+  color: $sub-text-color;
+}
+
+.home__inquiry__telephone-text2 {
+  font-size: 11px;
+  color: $sub-text-color;
+}

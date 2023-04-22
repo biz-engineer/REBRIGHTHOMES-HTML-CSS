@@ -1,0 +1,60 @@
+【コーディングルール】
+
+●スタイル適用の優先度
+ (1) reset CSS
+ (2) tailwind CSS
+ (3) common CSS
+ (4) ページ固有 CSS
+
+●ファイル構成
+ ・HTML
+  ファイル名：ページ名.html
+ ・CSS
+  scssファイルでコーディング
+  各ページで適用するスタイルはimportディレクトリに置く
+  各scssファイル冒頭で共通スタイルをインポート
+  インポートする内容は、以下の通り
+   -リセットスタイル：_reset.scss
+   -共通スタイル：_common.scss
+   -scss変数：_mixin.scss
+   -ヘッダースタイル：_header.scss
+   -フッタースタイル：_footer.scss
+  ページごとに適用するスタイルはpagesフォルダに格納する
+  ページごとに_ページ名.scss
+
+●Class命名規則
+・BEM記法
+ Block__Element--modifier
+ 参考：https://tech.synapse.jp/entry/2021/07/01/113000
+ 
+ 構成
+ ページ名__セクション__要素--個別調整
+ BlockとElementの区切りはアンダースコア２つで繋げる
+ BlockもしくはElementとModifierの区切りはハイフン２つで繋げる
+ Block、Element、Modifierを２つ以上の単語で表す場合の単語と単語の区切りはハイフン
+ Modifierのキーは省略可能
+
+ HTMLの要素名をセレクターとして利用しない。 
+ スコープを絞って影響範囲を狭くする。
+ 利用場所を変えたらスタイルが効かなくなるのを避ける。
+ idをスタイルに利用しない。クラスセレクターを使う。
+ HTMLの影響範囲がCSSのスタイリングと一致する。 
+ 影響範囲が想像できるクラス名をつける。
+ マルチクラス設計を使う。
+
+・共通スタイル
+ c_class名
+
+・個別ページスタイル　class命名法
+ div階層
+ container -> area -> box -> content -> item
+ 見出しはheading
+ imgはelement-img
+ pはelement-text
+ hはelement-heading
+
+ ・Javascriptのフックになるクラス名
+ js_を先頭に付ける
+
+
+

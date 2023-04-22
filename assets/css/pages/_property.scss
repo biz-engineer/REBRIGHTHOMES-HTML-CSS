@@ -1,0 +1,36 @@
+/* 物件紹介ページ */
+@use "../import/mixin" as *;
+/*変数読み込み*/
+
+.property__section {
+  width: 100%;
+  padding-top: 62px;
+}
+
+.property__main-area {}
+
+.property__text-area {
+  padding-top: 35px;
+}
+
+.property__text {
+  max-width: 603px;
+}
+
+.property__image-content {
+  padding-top: 108px;
+}
+
+.property__property-img1 {
+  width: 292px;
+}
+
+.property__property-img1:not(:first-child) {
+  margin-left: 99px;
+}
+
+.property__img2 {
+  width: 450px;
+  right: 49px;
+  top: 52.4px;
+}

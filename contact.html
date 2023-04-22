@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="utf-8">
+  <title></title>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="keywords" content="リブライトホームズ Rebrighthomes" />
+  <meta name="description" content="リブライトホームズ" />
+  <!-- favicon読み込み -->
+  <link rel="icon" href="">
+  <!-- Viewport読み込み -->
+  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, user-scalable=yes">
+  <!-- サムネイル読み込み -->
+  <meta name="thumbnail" content="" />
+  <!-- Tailwind CSS読み込み -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- Stylesheet読み込み -->
+  <link rel="stylesheet" href="assets/css/style.css">
+
+  <!-- Font Awesome読み込み -->
+  <link href="https://use.fontawesome.com/releases/v6.2.0/css/all.css" rel="stylesheet">
+</head>
+
+<body class=" relative">
+
+  <div class="top-header fixed z-30">
+    <div class="top-header__button-area flex justify-end">
+      <a class="top-header__button-link hidden sm:block" href="owner.html">
+        <button class="top-header__button">
+          <p class="top-header__button-text">
+            物件オーナーの方へ<br>
+            <span class="top-header__button-text--sub">For Property Owners</span>
+          </p>
+        </button>
+      </a>
+    </div>
+  </div>
+
+  <div class="main-window flex justify-end">
+    <!-- ヘッダー -->
+    <header class="side-header flex flex-col left-0" id="">
+
+      <!-- ハンバーガーメニュー -->
+      <div class="header__inner">
+        <button id="js-humberger" type="button" class="humberger" aria-controls="navigation" aria-expanded="false">
+          <span class="humberger__line"></span>
+          <span class="humberger__text"></span>
+        </button>
+        <div class="header__nav-area js-nav-area" id="navigation">
+          <div class="side-header__logo-area flex justify-center text-center">
+            <a class=" side-header__logo-link" href="index.html">
+              <img class="side-header__logo-img" src="assets/image/sideheader_logo.svg" alt="空き家再生">
+            </a>
+          </div>
+          <nav id="js-global-navigation" class="side-header__navigation-area text-center global-navigation">
+            <ul class="side-header__list-box global-navigation__list">
+              <li class="side-header__list-item">
+                <a href="index.html" class="side-header__list-link global-navigation__link">
+                  <p class="side-header__list-top-text">
+                    <sapn class="side-header__box-icon"></span>
+                      トップ
+                  </p>
+                  <p class="side-header__list-sub-text">
+                    TOP
+                  </p>
+                </a>
+              </li>
+              <li class="side-header__list-item">
+                <a href="about.html" class="side-header__list-link global-navigation__link">
+                  <p class="side-header__list-top-text">
+                    リブライトホームズとは
+                  </p>
+                  <p class="side-header__list-sub-text">
+                    What is Rebright Homes
+                  </p>
+                </a>
+              </li>
+              <li class="side-header__list-item">
+                <a href="owner.html" class="side-header__list-link global-navigation__link">
+                  <p class="side-header__list-top-text">
+                    物件オーナーの方へ
+                  </p>
+                  <p class="side-header__list-sub-text">
+                    For Property Owners
+                  </p>
+                </a>
+              </li>
+              <li class="side-header__list-item">
+                <a href="property.html" class="side-header__list-link global-navigation__link">
+                  <p class="side-header__list-top-text">
+                    物件情報
+                  </p>
+                  <p class="side-header__list-sub-text">
+                    Property Information
+                  </p>
+                </a>
+              </li>
+              <li class="side-header__list-item">
+                <a href="company.html" class="side-header__list-link global-navigation__link">
+                  <p class="side-header__list-top-text">
+                    会社概要
+                  </p>
+                  <p class="side-header__list-sub-text">
+                    About us
+                  </p>
+                </a>
+              </li>
+              <li class="side-header__list-item">
+                <a href="blog.html" class="side-header__list-link global-navigation__link">
+                  <p class="side-header__list-top-text">
+                    ブログ
+                  </p>
+                  <p class="side-header__list-sub-text">
+                    Blog
+                  </p>
+                </a>
+              </li>
+              <li class="side-header__list-item">
+                <a href="contact.html" class="side-header__list-link global-navigation__link">
+                  <p class="side-header__list-top-text">
+                    お問合せ
+                  </p>
+                  <p class="side-header__list-sub-text">
+                    Contact
+                  </p>
+                </a>
+              </li>
+            </ul>
+            <div id="js-focus-trap" tabindex="0"></div>
+          </nav>
+          <div class="side-header__sns-area text-center">
+            <a class="side-header__sns-link" href="">
+              <i class="fa-brands fa-twitter side-header__sns-icon"></i>
+            </a>
+            <a class="side-header__sns-link" href="">
+              <i class="fa-brands fa-instagram side-header__sns-icon"></i>
+            </a>
+            <a class="side-header__sns-link" href="">
+              <i class="fa-brands fa-facebook side-header__sns-icon"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main class="c_main flex justify-center relative">
+      <div class="c_main-container relative">
+
+
+        <!-- 問い合わせフォーム -->
+        <section class="contact__section" id="">
+          <div class="c_home__heading-area flex justify-between">
+            <h1 class="c_home__heading-text">
+              お問い合わせ
+            </h1>
+            <p class="c_home__heading-subtext">
+              Contact
+            </p>
+          </div>
+          <div class="contact__main-area flex justify-center">
+            <div class="contact__article-content">
+              <form class="contact__form" id="contact__form" method="post" action="">
+                <div class="contact__form-item">
+                  <p class="contact__form-label-box text-center">
+                    <label class="contact__form-label" for="name">お名前</label>
+                  </p>
+                  <p class="contact__form-input-box w-full">
+                    <input type="text" class="contact__form-input" id="name" name="name" placeholder="お名前" value=" "
+                      autocomplete="name">
+                  </p>
+                </div>
+                <div class="contact__form-item">
+                  <p class="contact__form-label-box text-center">
+                    <label class="contact__form-label" for="kana">お名前(カナ)</label>
+                  </p>
+                  <p class="contact__form-input-box w-full">
+                    <input type="text" class="contact__form-input" id="name" name="kana" placeholder="お名前(カナ)" value=" "
+                      autocomplete="kana">
+                  </p>
+                </div>
+                <div class="contact__form-item">
+                  <p class="contact__form-label-box text-center">
+                    <label class="contact__form-label" for="email">E-mail</label>
+                  </p>
+                  <p class="contact__form-input-box w-full">
+                    <input type="text" class="contact__form-input" id="email" name="email" placeholder="E-mail"
+                      value=" " autocomplete="email">
+                  </p>
+                </div>
+                <div class="contact__form-item">
+                  <p class="contact__form-label-box text-center">
+                    <label class="contact__form-label" for="tel">電話番号</label>
+                  </p>
+                  <p class="contact__form-input-box w-full">
+                    <input type="text" class="contact__form-input" id="tel" name="tel" placeholder="電話番号（半角英数字でご入力ください）"
+                      value=" " autocomplete="tel">
+                  </p>
+                </div>
+                <div class="contact__form-item">
+                  <p class="contact__form-label-box text-center">
+                    <label class="contact__form-label" for="body">内容</label>
+                  </p>
+                  <div class="contact__form-input-box contact__form-input-box--body w-full">
+                    <textarea type="text" class="contact__form-input contact__form-input--body" id="body" name="body"
+                      placeholder="問い合わせ内容" value=" " autocomplete="body"></textarea>
+                  </div>
+                </div>
+                <div class="contact__button-box flex justify-center">
+
+                  <button class="contact__mail-button flex justify-between items-center">
+                    <div class="contact__button-inner w-full">
+                      <div class="contact__mail-text-box flex justify-between items-center">
+                        <span></span>
+                        <p class="contact__mail-text1">
+                          送信
+                        </p>
+                        <i class="fa-solid fa-arrow-right contact__arrow-right-icon"></i>
+                      </div>
+                    </div>
+                  </button>
+
+
+                </div>
+              </form>
+            </div>
+          </div>
+        </section>
+
+        <!-- お問い合わせ -->
+        <section class="contact__section" id="">
+          <div class="contact__main-area flex justify-center z-40">
+            <a class="contact__telephone-link" href="">
+              <button class="contact__telephone-button flex justify-between items-center relative">
+                <div class="contact__button-illust-box w-full absolute top-0">
+                  <img class="contact__button-illust-img absolute bottom-0" src="assets/image/contact_operator.png"
+                    alt="">
+                </div>
+                <div class="contact__button-inner flex justify-center w-full">
+                  <img class="contact__telephone-img" src="assets/image/home_inquiry-phone.png" alt="">
+                  <div class="contact__telephone-text-box">
+                    <p class="contact__telephone-text1">
+                      050-5435-9874
+                    </p>
+                    <p class="contact__telephone-text2">
+                      受付時間　平日00：00〜00：00（土日祝除く）
+                    </p>
+                  </div>
+                </div>
+              </button>
+            </a>
+          </div>
+        </section>
+
+      </div>
+
+
+    </main>
+
+
+  </div>
+  <div class="home__bottom-img__section relative">
+    <img class="home__bottom-img" src="assets/image/home_bottom-1.png" alt="home_forest">
+
+    <!-- トップへ戻るボタン -->
+    <div class="c_top-migration-link " id="js-topmigration-button">
+      <a href="#">
+        <img class="c_top-migration-img" src="assets/image/topbutton-1.png" alt="top">
+      </a>
+    </div>
+
+    <img class="c_background-logo absolute left-0 bottom-0" src="assets/image/c_background-logo.png" alt="logo">
+
+  </div>
+
+
+
+  <!-- Footer -->
+  <footer class="main-footer relative" id="footer">
+    <img class="main-footer__boder absolute w-full z-30" src="assets/image/footer_border.png" alt="フッター境界">
+    <div class="main-footer__container text-center">
+      <div class="main-footer__logo-area text-center flex justify-center">
+        <img class="main-footer__logo-img" src="assets/image/footer_logo.svg" alt="footer_logo">
+      </div>
+      <div class="main-footer__sns-area flex justify-center">
+        <a class="main-footer__sns-link" href="">
+          <i class="fa-brands fa-twitter main-footer__sns-icon"></i>
+        </a>
+        <a class="main-footer__sns-link" href="">
+          <i class="fa-brands fa-instagram main-footer__sns-icon"></i>
+        </a>
+        <a class="main-footer__sns-link" href="">
+          <i class="fa-brands fa-facebook main-footer__sns-icon"></i>
+        </a>
+      </div>
+      <div class="main-footer__privacy-area">
+        <a class="main-footer__privacy-link" href="">
+          <p class="main-footer__privacy-text">
+            privacy policy
+          </p>
+        </a>
+        <p class="main-footer__copyright-text">
+          Copyright © rebrighthomes. All rights reserved.
+        </p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Javascript読み込み -->
+  <!-- jQuery読み込み -->
+  <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script> -->
+  <!-- 自作javascriptの読み込み -->
+  <script src="assets/js/script.js"></script>
+
+</body>
+
+</html>

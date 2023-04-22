@@ -1,0 +1,77 @@
+/* 共通スタイル */
+@use "mixin" as *;   /*変数読み込み*/
+
+body, a, p {
+  color: $main-text-color;
+  font-size: $main-font-size;
+  font-family: "Helvetica Neue",Arial,"Hiragino Kaku Gothic ProN","Hiragino Sans", Meiryo,sans-serif;
+}
+/* ページをまたいで適用するスタイル */
+.c_main {
+  width: calc(100% - $sideheader-width / 1920px * 100%);
+  padding-top: 41.6px;
+}
+
+.c_main-container {
+  width: min($container-width, 98% )  ;
+}
+
+.c_boundary {
+  padding-top: 177px;
+}
+
+.c_boundary-image {
+  position: absolute;
+  right: 0;
+  width: 100vw;
+}
+
+/* トップへ戻るボタン */
+.c_top-migration-link {
+  position: fixed;
+  bottom: 0;
+  right: 10px;
+  opacity: 0;
+  transition: opacity .5s;
+}
+
+//スクロールしてメインビジュアルより下になったときに追加
+.c_top-migration-link.active{
+  opacity: 1;
+}
+
+//スクロールして画面にフッターが現れたら追加
+.c_top-migration-link.stop{
+  position: absolute;
+  bottom: 0;
+}
+
+.c_top-migration-img {
+  
+}
+
+.c_sub-heading-icon {
+  content: "";
+  display: inline-block;
+  width: 18px;
+  height: 18px;
+  margin-right: 18px;
+  background-color: $sub-color;
+  position: absolute;
+  transform: translate(0px, 4px);
+}
+
+.c_sub-heading-text {
+  padding-left: 20px;
+  font-size: 30px;
+}
+
+
+
+@media ($smartphone-breakpoint < width   )  {
+  //PC,タブレットで電話番号のリンクは電話をかけられないようにする
+    a[href^="tel:"]{
+    pointer-events: none;
+  }
+
+}

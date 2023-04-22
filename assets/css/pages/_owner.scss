@@ -1,0 +1,59 @@
+/* TOPページ */
+@use "../import/mixin" as *;
+/*変数読み込み*/
+
+
+/* 物件オーナーの方へ */
+.owner__section {
+  width: 100%;
+  padding-top: 38.2px;
+}
+
+.owner__main-area {
+  padding-top: 35px;
+}
+
+.owner__img {
+  margin-top: 96.8px;
+  margin-right: 87px;
+}
+
+.owner__text-box {
+  width: 781px;
+  padding-top: 19.2px;
+}
+
+.owner__main-content {
+  margin-top: 63.3px;
+}
+
+.owner__main-heading-text {
+  padding-left: 37px;
+  font-size: $sub-large-font-size;
+}
+
+.owner__main-heading-subtext {
+  max-width: 603px;
+}
+
+.owner__agent-text {
+  max-width: 561px;
+  margin-top: 15px;
+}
+
+.owner__image-content {
+  margin-top: 156px;
+}
+
+.owner__sub-content  {
+  margin-top: 179.5px;
+  gap: 66.7px;
+}
+
+.owner__sub-text {
+  margin-top: 41.9px;
+}
+
+.owner__sub-img {
+  width: 100%;
+}

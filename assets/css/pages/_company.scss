@@ -1,0 +1,75 @@
+/* 会社概要 */
+@use "../import/mixin" as *;
+/*変数読み込み*/
+
+.company__section {
+  width: 100%;
+  padding-top: 62px;
+}
+
+.company__main-area {
+
+}
+
+.company__interview-area {
+  margin-top: 65.5px;
+}
+
+.company__sub-heading-text {
+  padding-left: 72px;
+  font-size: $ex-ex-large-font-size;
+}
+
+.company__inverview-content {
+  margin-top: 44.5px;
+}
+
+.company__interview-text {
+  max-width: 603px;
+}
+
+.company__interview-img {
+  width: 500px;
+  height: 333px;
+}
+
+.company__img {}
+
+.company__main-area {
+  margin-top: 253px;
+}
+.company__table-area {}
+
+.company__table {
+  border: 1px solid $main-color;
+  width: 100%;
+  max-width: 730px;
+}
+
+.company__table-row {
+  border: 1px solid $main-color;
+  height: 66px;
+}
+
+.company__table-heading {
+  min-width: 126px;
+  padding: 18pxpx 18px;
+  text-align: center;
+  vertical-align: middle;
+  font-size: 16px;
+  font-weight: 200;
+  background-color: $main-color;
+  color: $sub-text-color;
+}
+
+.company__table-row:not(:first-child) .company__table-heading {
+  border-top: 1px solid $sub-text-color;
+}
+
+.company__table-cell {
+  // min-width: 604px;
+  width: 500px;
+  padding-left: 20px;
+  padding-right: 20px;
+  vertical-align: middle;
+}

@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="utf-8">
+  <title></title>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="keywords" content="リブライトホームズ Rebrighthomes" />
+  <meta name="description" content="リブライトホームズ" />
+  <!-- favicon読み込み -->
+  <link rel="icon" href="">
+  <!-- Viewport読み込み -->
+  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, user-scalable=yes">
+  <!-- サムネイル読み込み -->
+  <meta name="thumbnail" content="" />
+  <!-- Tailwind CSS読み込み -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- Stylesheet読み込み -->
+  <link rel="stylesheet" href="assets/css/style.css">
+
+  <!-- Font Awesome読み込み -->
+  <link href="https://use.fontawesome.com/releases/v6.2.0/css/all.css" rel="stylesheet">
+</head>
+
+<body class=" relative">
+
+  <div class="top-header fixed z-30">
+    <div class="top-header__button-area flex justify-end">
+      <a class="top-header__button-link hidden sm:block" href="owner.html">
+        <button class="top-header__button">
+          <p class="top-header__button-text">
+            物件オーナーの方へ<br>
+            <span class="top-header__button-text--sub">For Property Owners</span>
+          </p>
+        </button>
+      </a>
+    </div>
+  </div>
+
+  <div class="main-window flex justify-end">
+    <!-- ヘッダー -->
+    <header class="side-header flex flex-col left-0" id="">
+
+      <!-- ハンバーガーメニュー -->
+      <div class="header__inner">
+        <button id="js-humberger" type="button" class="humberger" aria-controls="navigation" aria-expanded="false">
+          <span class="humberger__line"></span>
+          <span class="humberger__text"></span>
+        </button>
+        <div class="header__nav-area js-nav-area" id="navigation">
+          <div class="side-header__logo-area flex justify-center text-center">
+            <a class=" side-header__logo-link" href="index.html">
+              <img class="side-header__logo-img" src="assets/image/sideheader_logo.svg" alt="空き家再生">
+            </a>
+          </div>
+          <nav id="js-global-navigation" class="side-header__navigation-area text-center global-navigation">
+            <ul class="side-header__list-box global-navigation__list">
+              <li class="side-header__list-item">
+                <a href="index.html" class="side-header__list-link global-navigation__link">
+                  <p class="side-header__list-top-text">
+                    <sapn class="side-header__box-icon"></span>
+                      トップ
+                  </p>
+                  <p class="side-header__list-sub-text">
+                    TOP
+                  </p>
+                </a>
+              </li>
+              <li class="side-header__list-item">
+                <a href="about.html" class="side-header__list-link global-navigation__link">
+                  <p class="side-header__list-top-text">
+                    リブライトホームズとは
+                  </p>
+                  <p class="side-header__list-sub-text">
+                    What is Rebright Homes
+                  </p>
+                </a>
+              </li>
+              <li class="side-header__list-item">
+                <a href="owner.html" class="side-header__list-link global-navigation__link">
+                  <p class="side-header__list-top-text">
+                    物件オーナーの方へ
+                  </p>
+                  <p class="side-header__list-sub-text">
+                    For Property Owners
+                  </p>
+                </a>
+              </li>
+              <li class="side-header__list-item">
+                <a href="property.html" class="side-header__list-link global-navigation__link">
+                  <p class="side-header__list-top-text">
+                    物件情報
+                  </p>
+                  <p class="side-header__list-sub-text">
+                    Property Information
+                  </p>
+                </a>
+              </li>
+              <li class="side-header__list-item">
+                <a href="company.html" class="side-header__list-link global-navigation__link">
+                  <p class="side-header__list-top-text">
+                    会社概要
+                  </p>
+                  <p class="side-header__list-sub-text">
+                    About us
+                  </p>
+                </a>
+              </li>
+              <li class="side-header__list-item">
+                <a href="blog.html" class="side-header__list-link global-navigation__link">
+                  <p class="side-header__list-top-text">
+                    ブログ
+                  </p>
+                  <p class="side-header__list-sub-text">
+                    Blog
+                  </p>
+                </a>
+              </li>
+              <li class="side-header__list-item">
+                <a href="contact.html" class="side-header__list-link global-navigation__link">
+                  <p class="side-header__list-top-text">
+                    お問合せ
+                  </p>
+                  <p class="side-header__list-sub-text">
+                    Contact
+                  </p>
+                </a>
+              </li>
+            </ul>
+            <div id="js-focus-trap" tabindex="0"></div>
+          </nav>
+          <div class="side-header__sns-area text-center">
+            <a class="side-header__sns-link" href="">
+              <i class="fa-brands fa-twitter side-header__sns-icon"></i>
+            </a>
+            <a class="side-header__sns-link" href="">
+              <i class="fa-brands fa-instagram side-header__sns-icon"></i>
+            </a>
+            <a class="side-header__sns-link" href="">
+              <i class="fa-brands fa-facebook side-header__sns-icon"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main class="c_main flex justify-center relative">
+      <div class="c_main-container relative">
+
+        <!-- 物件オーナーの方へ -->
+        <section class="owner__section" id="">
+          <div class="c_home__heading-area flex justify-between">
+            <h1 class="c_home__heading-text">
+              物件オーナーの方へ
+            </h1>
+            <p class="c_home__heading-subtext">
+              For Property Owners
+            </p>
+          </div>
+          <div class="owner__main-area flex justify-between">
+            <p class="owner__main-heading-subtext">
+              テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト<br>
+              テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト<br>
+              テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト<br>
+            </p>
+            <img class="owner__img" src="assets/image/home_owner-1.png" alt="home_owner">
+          </div>
+          <div class="owner__main-content">
+            <span class="c_sub-heading-icon"></span>
+            <h2 class="c_sub-heading-text">
+              空き家で困ってる
+            </h2>
+            <p class="owner__agent-text">
+              テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト<br>
+              テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト<br>
+              テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト<br>
+            </p>
+          </div>
+          <div class="owner__image-content flex justify-center">
+            <img class="owner__image-img" src="assets/image/owner_main.png" alt="空き家対策">
+          </div>
+          <div class="owner__sub-content grid grid-cols-3">
+            <div class="owner__sub-item">
+              <img class="owner__sub-img" src="assets/image/owner_sub1.png" alt="民泊">
+              <p class="owner__sub-text">
+                テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト<br>
+                テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト<br>
+                テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト<br>
+              </p>
+            </div>
+            <div class="owner__sub-item">
+              <img class="owner__sub-img" src="assets/image/owner_sub2.png" alt="民泊">
+              <p class="owner__sub-text">
+                テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト<br>
+                テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト<br>
+                テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト<br>
+              </p>
+            </div>
+            <div class="owner__sub-item">
+              <img class="owner__sub-img" src="assets/image/owner_sub3.png" alt="民泊">
+              <p class="owner__sub-text">
+                テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト<br>
+                テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト<br>
+                テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト<br>
+              </p>
+            </div>
+          </div>
+        </section>
+
+        <!-- お問い合わせ -->
+        <section class="home__inquiry__section" id="">
+          <div class="c_home__heading-area flex justify-between">
+            <h2 class="c_home__heading-text">
+              お問い合わせ
+            </h2>
+            <p class="c_home__heading-subtext">
+              Contact
+            </p>
+          </div>
+          <div class="home__inquiry__main-area flex justify-center z-40">
+            <a class="home__inquiry__mail-link" href="">
+              <button class="home__inquiry__mail-button flex justify-between items-center">
+                <div class="home__inquiry__button-inner flex w-full">
+                  <img class="home__inquiry__mail-img" src="assets/image/home_inquiry-mail.png" alt="">
+                  <div class="home__inquiry__mail-text-box">
+                    <p class="home__inquiry__mail-text1">
+                      メールフォーム
+                    </p>
+                  </div>
+                </div>
+              </button>
+            </a>
+            <a class="home__inquiry__telephone-link" href="">
+              <button class="home__inquiry__telephone-button flex justify-between items-center">
+                <div class="home__inquiry__button-inner flex w-full">
+                  <img class="home__inquiry__telephone-img" src="assets/image/home_inquiry-phone.png" alt="">
+                  <div class="home__inquiry__telephone-text-box">
+                    <p class="home__inquiry__telephone-text1">
+                      050-5435-9874
+                    </p>
+                    <p class="home__inquiry__telephone-text2">
+                      受付時間　平日00：00〜00：00（土日祝除く）
+                    </p>
+                  </div>
+                </div>
+              </button>
+            </a>
+          </div>
+        </section>
+
+      </div>
+
+
+    </main>
+
+
+  </div>
+  <div class="home__bottom-img__section relative">
+    <img class="home__bottom-img" src="assets/image/home_bottom-1.png" alt="home_forest">
+
+    <!-- トップへ戻るボタン -->
+    <div class="c_top-migration-link " id="js-topmigration-button">
+      <a href="#">
+        <img class="c_top-migration-img" src="assets/image/topbutton-1.png" alt="top">
+      </a>
+    </div>
+
+    <img class="c_background-logo absolute left-0 bottom-0" src="assets/image/c_background-logo.png" alt="logo">
+
+  </div>
+
+
+
+  <!-- Footer -->
+  <footer class="main-footer relative" id="footer">
+    <img class="main-footer__boder absolute w-full z-30" src="assets/image/footer_border.png" alt="フッター境界">
+    <div class="main-footer__container text-center">
+      <div class="main-footer__logo-area text-center flex justify-center">
+        <img class="main-footer__logo-img" src="assets/image/footer_logo.svg" alt="footer_logo">
+      </div>
+      <div class="main-footer__sns-area flex justify-center">
+        <a class="main-footer__sns-link" href="">
+          <i class="fa-brands fa-twitter main-footer__sns-icon"></i>
+        </a>
+        <a class="main-footer__sns-link" href="">
+          <i class="fa-brands fa-instagram main-footer__sns-icon"></i>
+        </a>
+        <a class="main-footer__sns-link" href="">
+          <i class="fa-brands fa-facebook main-footer__sns-icon"></i>
+        </a>
+      </div>
+      <div class="main-footer__privacy-area">
+        <a class="main-footer__privacy-link" href="">
+          <p class="main-footer__privacy-text">
+            privacy policy
+          </p>
+        </a>
+        <p class="main-footer__copyright-text">
+          Copyright © rebrighthomes. All rights reserved.
+        </p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Javascript読み込み -->
+  <!-- jQuery読み込み -->
+  <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script> -->
+  <!-- 自作javascriptの読み込み -->
+  <script src="assets/js/script.js"></script>
+
+</body>
+
+</html>
